@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lin Engineering, Ltd.</title>
+    <link rel="stylesheet" type="text/css" href="hero.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+    <div class="hero">
+        <nav id="navbar">
+            <h2 class="logo"><a href="#home">Lin Engineering, Ltd.</a></h2>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#synergy">Synergy</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    </header>
+    <script>
+        // execute function when scrolled
+        window.onscroll = function() {smoothScroll()};
+
+        // get navbar
+        var navbar = document.getElementById("navbar");
+
+        // get offset position of navbar;
+        var sticky = navbar.offsetTop;
+
+        // add sticky class to nav when scroll position is reached 
+        // remove sticky when scrolled
+        function smoothScroll() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+
+
+    </script>
+
+    <section id="home" class="home-container">
+        <div class="image">IMAGE GOES HERE</div>
+        <div class="content">
+            <h>Consulting Engineers</h>
+            <p>Paragraph here introducing Lin Engineering, Ltd.
+            </p>
+        </div>
+        
+    </section>
+
+    <section id="about" class="about-container">
+        
+    </section>
+     
+    <section id="services" class="services-container">
+       
+    </section>
+
+    <section id="synergy" class="synergy-container">
+        
+    </section>
+    
+    <section id="contact" class="contact-container">
+        
+        
+    </section>
+
+    <div class="footer">
+        <h2>Lin Engineering, Ltd.</h2>
+        <h3>Consulting Engineers</h3>
+
+        <div class="footer-info">
+            <p>Copyright &copy; <script>document.write(new Date().getFullYear())</script> Lin Engineering, Ltd. All Rights Reserved</p>
+            <a href="#PRIVACYPOLICYLINKHERE">Privacy Policy</a>
+        </div>
+      </div>
+</body>
+
+</html>

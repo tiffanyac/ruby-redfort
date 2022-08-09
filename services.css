@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&family=Orbitron&family=Poppins:wght@300&display=swap');
+
+#hero {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.201), rgba( 0, 0, 0, 0.411)), url("bridgeagain.png") no-repeat center  / cover;
+    color: white;
+}
+
+
+.column1 {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    z-index; 1;
+    display: list-item;
+
+
+  }
+  .column1 h1 {
+    margin-left: 20px;
+    font-family: "Orbitron";
+    font-size: 35px;
+    color: navy;
+  }
+
+  .column1 li {
+    margin-left: 30px;
+    font-family: "Poppins";
+    font-size: 15px;
+  }
+
+  .column2 {
+    margin-top: 150px;
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    z-index; 1;
+
+  }
+  .column2 h1 {
+    font-family: "Orbitron";
+    font-size: 20px;
+    color: navy;
+  }
+  .column2 h2 {
+    margin-top: 10px;
+    font-size: 15px;
+    color: black;
+  }
+  .column2 p {
+    font-size: 12px;
+  }
+  .column3 {
+    margin-top:250px;
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    z-index; 1;
+
+  }
+  .column3 h1 {
+    font-family: "Orbitron";
+    font-size: 20px;
+    color: navy;
+  }
+  .column3 h2 {
+    margin-top: 10px;
+    font-size: 15px;
+    color: black;
+  }
+  .column3 p {
+    font-size: 12px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }

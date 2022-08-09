@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script>
+    var util = {
+  mobileMenu() {
+    $("#nav").toggleClass("nav-visible");
+  },
+  windowResize() {
+    if ($(window).width() > 800) {
+      $("#nav").removeClass("nav-visible");
+    }
+  },
+  scrollEvent() {
+    var scrollPosition = $(document).scrollTop();
+    
+    $.each(util.scrollMenuIds, function(i) {
+      var link = util.scrollMenuIds[i],
+          container = $(link).attr("href"),
+          containerOffset = $(container).offset().top,
+          containerHeight = $(container).outerHeight(),
+          containerBottom = containerOffset + containerHeight;
+
+      if (scrollPosition < containerBottom - 20 && scrollPosition >= containerOffset - 20) {
+        $(link).addClass("active");
+      } else {
+        $(link).removeClass("active");
+      }
+    });
+  }
+};
+
+$(document).ready(function() {
+  
+  util.scrollMenuIds = $("a.nav-link[href]");
+  $("#menu").click(util.mobileMenu);
+  $(window).resize(util.windowResize);
+  $(document).scroll(util.scrollEvent);
+  
+});
+
+  </script>
+</head>
+<body>
+    <header id="nav-wrapper">
+        <nav id="nav">
+          <div class="nav left">
+            <span class="gradient skew"><h1 class="logo un-skew"><a href="#home">Lin Engineering, Ltd.</a></h1></span>
+            <button id="menu" class="btn-nav"><span class="fas fa-bars"></span></button>
+          </div>
+          <div class="nav right">
+            <a href="#home" class="nav-link active"><span class="nav-link-span"><span class="u-nav">Home</span></span></a>
+            <a href="#about" class="nav-link"><span class="nav-link-span"><span class="u-nav">About</span></span></a>
+            <a href="#services" class="nav-link"><span class="nav-link-span"><span class="u-nav">Services</span></span></a>
+            <a href="#synergy" class="nav-link"><span class="nav-link-span"><span class="u-nav">Synergy</span></span></a>
+            <a href="#contact" class="nav-link"><span class="nav-link-span"><span class="u-nav">Contact</span></span></a>
+          </div>
+        </nav>
+      </header>
+    <main>
+        <section id="home">
+          <div class="home-content">
+            <br>
+            <br>
+            <h1>Home</h1>
+          </div>
+    
+        </section>
+        <section id="about">
+          <div class="about-content">
+            <br>
+            <br>
+            <h1>About</h1>
+          </div>
+    
+        </section>
+        <section id="services">
+          <div class="services-content">
+            <br>
+            <br>
+            <h1>Services</h1>
+          </div>
+    
+        </section>
+        <section id="synergy">
+          <div class="synergy-content">
+            <br>
+            <br>
+            <h1>Synergy</h1>
+          </div>
+    
+        </section>
+        <section id="contact">
+          <div class="contact-content">
+            <br>
+            <br>
+            <h1>Contact</h1>
+          </div>
+    
+        </section>
+      </main>
+</body>
+</html>
