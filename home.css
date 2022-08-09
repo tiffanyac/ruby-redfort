@@ -69,15 +69,17 @@ html {
     color: black;
 }
 
-button {
+.container .info a {
+  text-decoration: none;
+  padding: 10px;
   cursor: pointer;
   display: inline-block;
   background-color: #D2E5F5;
   color: navy;
   border-radius: 5px;
-
-  font-size: 25px;
-  width: 100px;
+  text-align: center;
+  font-size: 15px;
+  width: 150px;
   height: 40px;
   border-color: #D2E5F5;
   position: auto;
@@ -85,17 +87,18 @@ button {
   
 }
 
-button:focus {
+.container .info a:focus {
   box-shadow: #d2d2ee 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #babaea 0 -3px 0 inset;
 }
-button:hover {
+.container .info a:hover {
   box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
   transform: translateY(-2px);
 }
-button:active {
+.container .info a:active {
   box-shadow: #D6D6E7 0 3px 7px inset;
   transform: translateY(2px);
 } 
+
 
 .navbar {
     width: 100%;
