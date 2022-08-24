@@ -2,6 +2,7 @@
     width: 25%;
     float: left;
     margin-right: 110px;
+
   }
   /* .imColumn:after {
     content: "";
@@ -22,6 +23,7 @@
     border-radius: 10px;
     perspective: 1000px;
     position: relative;
+    z-index: -1;
   }
   .box-inner {
     position: absolute;
