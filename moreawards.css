@@ -1,0 +1,59 @@
+.imColumn {
+    width: 25%;
+    float: left;
+    margin-right: 110px;
+  }
+  /* .imColumn:after {
+    content: "";
+    display: table;
+    clear: both;
+  } */
+
+  /* div {
+    width: 300px;
+    margin: auto;
+  } */
+  .box {
+    margin-top: 20px;
+    background-color: transparent;
+    width: 215px;
+    height: 136px;
+    /* border: 1px solid #eeeeee; */
+    border-radius: 10px;
+    perspective: 1000px;
+    position: relative;
+  }
+  .box-inner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+  }
+  .box:hover .box-inner {
+    transform: rotateY(180deg);
+  }
+  .box-front,
+  .box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  .box-front {
+    /* background: url("award1.png") no-repeat; */
+    color: #111111;
+  }
+  .box-back {
+    background-color: slategrey;
+    color: #eeeeee;
+    transform: rotateY(180deg);
+    border-radius: 10px;
+  }
+  .box-back p {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 10px;
+  }
+
