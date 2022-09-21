@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&family=Orbitron&family=Poppins:wght@300&display=swap');
+
+section {
+    height: 150vh;
+}
+
+h1 {
+    margin-left: 50px;
+    font-family: "Orbitron";
+    color: navy;
+}
+
+
+
+.preq1 {
+    position: absolute;
+    top: 150px;
+    margin-left: 95px;
+    margin-bottom: 20px;
+}
+.preq1 h2, p {
+    margin-bottom: 5px;
+}
+
+.preq2 {
+    /* position: absolute; */
+    position: absolute;
+    
+    top: 700px;
+    margin-left: 809px;
+  
+}
+.preq2 h2, p {
+    margin-bottom: 5px;
+}
+
+
+.square {
+    position: absolute;
+    width: 600px; 
+    height: 300px;
+    left: 109px;
+    top: 115px;
+    background-color:  #D9DFEB;
+    z-index: -1;
+}
+
+.square2 {
+    position: absolute;
+    width: 600px;
+    height: 300px;
+    left: 809px;
+    top: 115px;
+    background-color: #cfdcc3;
+    z-index: -1;
+}
+.square3 {
+    position: absolute;
+    width: 600px;
+    height: 300px;
+    left: 109px;
+    top: 461px;
+    background-color: #F0FFF0;
+    z-index: -1;
+}
+
+.square4 {
+    position: absolute;
+    width: 600px;
+    height: 300px;
+    left: 809px;
+    top: 461px;
+    background-color: 	#cae1ff;
+    z-index: -1; 
+}
+
+.square5 {
+    position: absolute;
+    width: 600px;
+    height: 300px;
+    left: 809px;
+    top: 831px;
+    background-color: #e9ffdb;
+    z-index: -1; 
+}
+
+.square6 {
+    position: absolute;
+    width: 600px;
+    height: 300px;
+    left: 109px;
+    top: 831px;
+    background-color: #e0ffff;
+    z-index: -1; 
+}
+
+.circle1 img {
+    /* position: absolute; */
+
+width: 250px;
+height: 250px;
+margin-left: 667px;
+
+margin-top: 5px;
+}
+
+.circle2 img {
+    width: 250px;
+    height: 250px;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+.circle3 img {
+    position: absolute;
+    top: 500px;
+    width: 250px;
+    height: 250px;
+    margin-left: 1150px;
+    z-index: 1;
+}
+
+.circle4 img {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    margin-left: 420px;
+    z-index: 1;
+}
+/* 
+.circle2 img {
+    width: 100px;
+    height: 100px;
+    margin-left: 20px;
+    top: 10px;
+    margin-top: 10px;
+} */
+
+img {
+    max-width: 200%;
+    z-index: 1;
+}
+
+.responsive {
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 880px) {
+    /* .square {
+       display: block;
+       width: 100%;
+       height: 50%;
+       left: 10px;
+       right: 10px;
+       justify-content: center;
+       align-items: center;
+       z-index: -1;
+
+    } */
+    section {
+        background-color: aliceblue;
+    }
+    .square5 {
+        display: block;
+        width: 100%;
+    }
+
+    .preq1 {
+        position: absolute;
+        margin-bottom: 20px;
+        margin-left: 65px;
+    }
+    .preq1 h2, p {
+        font-size: 1rem;
+    }
+    .preq2 {
+        position: absolute;
+        top: 750px;
+        margin-left: 65px;
+    }
+    .preq2 h2, p {
+        font-size: 1rem;
+    }
+    .square2 {
+        display: none;
+    }
+    .square3 {
+        display: none;
+    }
+    .square4 {
+        display: none;
+    }
+    .square5 {
+        display: none;
+    }
+    .square6 {
+        display: none;
+    }
+    .circle1 img {
+        position: absolute;
+        top: 350px;
+        margin-left: 50px;
+
+        width: 150px;
+        height: 150px;
+    }
+    .circle2 img {
+        position: absolute;
+        top: 500px;
+        margin-left: 300px;
+        width: 150px;
+        height: 150px;
+    }
+
+    .circle3 img {
+        position: absolute;
+        margin-left: 120px;
+        margin-top: 100px;
+        width: 150px;
+        height: 150px;
+        margin-bottom: 30px;
+    }
+
+    .circle4 img {
+        position: absolute;
+        top: 1030px;
+        margin-left: 300px;
+        width: 150px;
+        height: 150px;
+    }
+    /* .circle2 {
+        margin-left: 100px;
+        width: 50px;
+        height: 50px;
+    }
+    .circle3 {
+        margin-left: 100px;
+        width: 50px;
+        height: 50px;
+    } */
+    /* img {
+        max-width: 100px;
+        margin-top: 20px;
+    }
+} */
+}
